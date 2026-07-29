@@ -44,7 +44,7 @@ class ColectivoController extends Controller
     {
         Colectivo::create($request->all());
 
-        return Redirect::route('colectivo.index')
+        return Redirect::route('colectivos.index')
             ->with('success', 'Colectivo creado correctamente.');
     }
 

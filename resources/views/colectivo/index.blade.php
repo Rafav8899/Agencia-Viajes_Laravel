@@ -49,7 +49,6 @@
                                     @foreach ($colectivos as $colectivo)
                                         <tr>
                                             <td>{{ ++$i }}</td>
-                                            
 										<td> 
                                             {{ $colectivo->conductore->nombre }}
                                         </td>

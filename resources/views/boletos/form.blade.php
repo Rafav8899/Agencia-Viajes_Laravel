@@ -35,7 +35,7 @@
                 <option value="">Selecciona un Colectivo</option>
                 @foreach($colectivos as $colectivo)
                     <option value="{{ $colectivo->id }}" {{ old('id_viaje', $boleto?->id_colectivo) == $boleto->id ? 'selected' : '' }}>
-                        {{ $colectivo->patente }}
+                        {{ $colectivo->empresa }}
                     </option>
                 @endforeach
             </select>
@@ -44,12 +44,12 @@
 
         <div class="form-group mb-2 mb20">
             <label for="fecha" class="form-label">{{ __('Fecha') }}</label>
-            <input type="text" name="fecha" class="form-control @error('fecha') is-invalid @enderror" value="{{ old('fecha', $boleto?->fecha) }}" id="fecha" placeholder="Fecha">
+            <input type="date" name="fecha" class="form-control @error('fecha') is-invalid @enderror" value="{{ old('fecha', $boleto?->fecha) }}" id="fecha" placeholder="Fecha">
             {!! $errors->first('fecha', '<div class="invalid-feedback" role="alert"><strong>:message</strong></div>') !!}
         </div>
         <div class="form-group mb-2 mb20">
             <label for="hora" class="form-label">{{ __('Hora') }}</label>
-            <input type="text" name="hora" class="form-control @error('hora') is-invalid @enderror" value="{{ old('hora', $boleto?->hora) }}" id="hora" placeholder="Hora">
+            <input type="time" name="hora" class="form-control @error('hora') is-invalid @enderror" value="{{ old('hora', $boleto?->hora) }}" id="hora" placeholder="Hora">
             {!! $errors->first('hora', '<div class="invalid-feedback" role="alert"><strong>:message</strong></div>') !!}
         </div>
 

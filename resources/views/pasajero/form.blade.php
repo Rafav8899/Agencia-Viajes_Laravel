@@ -8,17 +8,17 @@
         </div>
         <div class="form-group mb-2 mb20">
             <label for="email" class="form-label">{{ __('Gmail') }}</label>
-            <input type="text" name="email" class="form-control @error('email') is-invalid @enderror" value="{{ old('email', $pasajero?->email) }}" id="email" placeholder="Gmail">
+            <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" value="{{ old('email', $pasajero?->email) }}" id="email" placeholder="Gmail">
             {!! $errors->first('email', '<div class="invalid-feedback" role="alert"><strong>:message</strong></div>') !!}
         </div>
         <div class="form-group mb-2 mb20">
             <label for="tel" class="form-label">{{ __('Nro de Telefono') }}</label>
-            <input type="text" name="tel" class="form-control @error('tel') is-invalid @enderror" value="{{ old('tel', $pasajero?->tel) }}" id="tel" placeholder="Telefono">
+            <input type="number" name="tel" class="form-control @error('tel') is-invalid @enderror" value="{{ old('tel', $pasajero?->tel) }}" id="tel" placeholder="Telefono">
             {!! $errors->first('tel', '<div class="invalid-feedback" role="alert"><strong>:message</strong></div>') !!}
         </div>
         <div class="form-group mb-2 mb20">
             <label for="dni" class="form-label">{{ __('DNI') }}</label>
-            <input type="text" name="dni" class="form-control @error('dni') is-invalid @enderror" value="{{ old('dni', $pasajero?->dni) }}" id="dni" placeholder="dni">
+            <input type="number" name="dni" class="form-control @error('dni') is-invalid @enderror" value="{{ old('dni', $pasajero?->dni) }}" id="dni" placeholder="dni">
             {!! $errors->first('dni', '<div class="invalid-feedback" role="alert"><strong>:message</strong></div>') !!}
         </div>
 

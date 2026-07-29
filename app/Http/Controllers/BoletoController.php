@@ -22,7 +22,7 @@ class BoletoController extends Controller
     {
         $boletos = Boleto::paginate();
 
-        return view('boleto.index', compact('boletos'))
+        return view('boletos.index', compact('boletos'))
             ->with('i', ($request->input('page', 1) - 1) * $boletos->perPage());
     }
 
@@ -36,7 +36,7 @@ class BoletoController extends Controller
         $viajes = Viaje::all();
         $colectivos = Colectivo::all();
 
-        return view('boleto.create', compact('boleto','pasajeros','viajes','colectivos'));
+        return view('boletos.create', compact('boleto','pasajeros','viajes','colectivos'));
     }
 
     /**
@@ -59,7 +59,7 @@ class BoletoController extends Controller
     {
         $boleto = Boleto::find($id);
 
-        return view('boleto.show', compact('boleto'));
+        return view('boletos.show', compact('boleto'));
     }
 
     /**

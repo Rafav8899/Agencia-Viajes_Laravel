@@ -16,11 +16,11 @@
                                 {{ __('Boletos') }}
                             </span>
 
-                             <div class="float-right">
+                            <div class="float-right">
                                 <a href="{{ route('boletos.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
-                                  {{ __('Crear Boleto') }}
+                                {{ __('Crear Boleto') }}
                                 </a>
-                              </div>
+                            </div>
                         </div>
                     </div>
                     @if ($message = Session::get('success'))
@@ -38,9 +38,9 @@
 									<th>Pasajero</th>
                                     <th>Destino</th>
 									<th>Empresa</th>
-                                    <th>Patente</th>
-									<th>Fecha</th>
+                                    <th>Fecha</th>
 									<th>Hora</th>
+									<th>Precio</th>
 
                                         <th></th>
                                     </tr>

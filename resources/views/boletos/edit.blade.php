@@ -18,7 +18,7 @@
                             {{ method_field('PATCH') }}
                             @csrf
 
-                            @include('boleto.form')
+                            @include('boletos.form')
 
                         </form>
                     </div>

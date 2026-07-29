@@ -17,7 +17,7 @@
                         <form method="POST" action="{{ route('boletos.store') }}"  role="form" enctype="multipart/form-data">
                             @csrf
 
-                            @include('boleto.form')
+                            @include('boletos.form')
 
                         </form>
                     </div>
