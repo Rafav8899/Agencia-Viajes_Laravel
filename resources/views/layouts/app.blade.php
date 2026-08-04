@@ -35,22 +35,22 @@
                     <ul class="navbar-nav me-auto">
 
                         <li class="nav-item">
+                            <a class="nav-link" href="{{ route('boletos.index') }}">{{ __('Boletos') }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('viajes.index') }}">{{ __('Viajes') }}</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="{{ route('pasajeros.index') }}">{{ __('Pasajeros') }}</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('rutas.index') }}">{{ __('Rutas') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('viajes.index') }}">{{ __('Viajes') }}</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="{{ route('conductores.index') }}">{{ __('Conductores') }}</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('colectivos.index') }}">{{ __('Colectivos') }}</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('boletos.index') }}">{{ __('Boletos') }}</a>
                         </li>
                     </ul>
                     @endif
