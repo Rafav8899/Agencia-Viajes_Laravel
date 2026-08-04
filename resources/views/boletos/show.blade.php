@@ -48,7 +48,7 @@
                                 
                                 <div class="form-group mb-2 mb20">
                                     <strong>Fecha:</strong>
-                                    {{ $boleto->fecha }}
+                                    {{date('d-m-y', strtotime($boleto->fecha)) }}
                                 </div>
                                 <div class="form-group mb-2 mb20">
                                     <strong>Hora:</strong>
